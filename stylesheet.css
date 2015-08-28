@@ -1,0 +1,235 @@
+/**
+* Image slider with pure CSS
+* Original version in http://demosthenes.info/blog/css
+*/
+
+.image-slider {
+    position:relative;
+    display: inline-block;
+    line-height: 0;
+}
+
+/* Could use a pseudo-element, but they’re currently
+   super buggy. See: http://dabblet.com/gist/ab432c3f6a8f672cd077 */
+.image-slider > div {
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 25px;
+    max-width: 100%;
+    overflow: hidden;
+    resize: horizontal;
+}
+
+/* Cross-browser resizer styling */
+.image-slider > div:before {
+    content: '';
+    position: absolute;
+    right: 0; bottom: 0;
+    width: 25px; height: 25px;
+    padding: 5px;
+    background: linear-gradient(-45deg, whitesmoke 50%, transparent 0);
+    background-clip: content-box;
+    cursor: ew-resize;
+    -webkit-filter: drop-shadow(0 0 2px black);
+    filter: drop-shadow(0 0 2px black);
+}
+
+.image-slider img {
+    user-select: none;
+    max-width: 1200px;
+}
+
+.postContent {
+    font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: 0.01rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.5;
+    position: relative;
+    width: 800px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageCaption {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    left: 0px;
+    margin-top: 10px;
+    top: 0px;
+    font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: 0.01rem;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.6);
+    outline: 0px none;
+    outline-width: 0px;
+    outline-style: none;
+    outline-color: -moz-use-text-color;
+    z-index: 300;
+    display: block;
+    clear: both
+}
+
+.image {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+    margin-top: 10px;
+    top: 0px;
+    outline: 0px none;
+    outline-width: 0px;
+    outline-style: none;
+    outline-color: -moz-use-text-color;
+    z-index: 300;
+    display: block;
+    clear: both
+}
+
+.layoutSingleColumn {
+    /* margin: 0 auto;
+    width: 75%; */
+}
+
+body {
+    text-rendering: optimizelegibility;
+    font-feature-settings: "liga";
+    color: rgba(0, 0, 0, 0.8);
+}
+
+h1, h2, h3, h4, h5, h6, dl, dd, menu, figure, blockquote, p, pre, form {
+    margin: 0px;
+    margin-top: 0px;
+    margin-right-value: 0px;
+    margin-bottom: 0px;
+    margin-left-value: 0px;
+    margin-left-ltr-source: physical;
+    margin-left-rtl-source: physical;
+    margin-right-ltr-source: physical;
+    margin-right-rtl-source: physical;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    margin-left: -1.8px;
+    margin-left-value: -1.8px;
+    margin-left-ltr-source: physical;
+    margin-left-rtl-source: physical;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+h2 {
+    font-family: "jaf-bernino-sans", "Open sans", "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    margin-left: -3px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    margin-top: 40px;
+    padding-top: 0px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-family: "jaf-bernino-sans", "Open sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    margin-left: -1.8px;
+    line-height: 1.2;
+    margin-top: 40px;
+    margin-bottom: 4px;
+}
+
+h4 {
+    font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 32px;
+    margin-left: -1.6px;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.44);
+    margin-top: 40px;
+    margin-bottom: 2px;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0px;
+    display: block;
+    width: 100px;
+    margin: 51px auto 41px;
+    border-right: 0px none;
+    border-color: rgba(0, 0, 0, 0.15) -moz-use-text-color -moz-use-text-color;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    border-image-source: none;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-width: 1 1 1 1;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+}
+
+.footnotes {
+    font-family: "Open sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2
+}
+
+.sources {
+    font-family: "Open sans";
+    font-size: 15px;
+    font-size: smaller;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.01rem;
+}
+
+@media only screen and (max-width : 980px) {
+    .postContent, .imageCaption, figcaption, img, table {
+        width:700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .postContent, .imageCaption, figcaption, img, table {
+        width:500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .postContent, .imageCaption, figcaption, img, .footnotes, table {
+        width:400px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.0em;
+
+    }
+}
