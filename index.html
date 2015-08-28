@@ -2,160 +2,268 @@
 <html>
 <head lang="en">
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<link href="sliderstyle.css" rel="stylesheet" type="text/css" />
-	<link href="stylesheet.css" rel="stylesheet" type="text/css" />
 	<title>Walker Boyle - IRENE</title>
+	<link href="css/sliderstyle.css" rel="stylesheet" type="text/css" />
+	<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+	<link href="script/bar-ui/css/bar-ui.css" rel="stylesheet" type="text/css" />
+	<link href="css/sm2.css" rel="stylesheet" type="text/css" />
 	<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+	<script src="script/soundmanager2-jsmin.js"></script>
+	<script src="script/bar-ui/script/bar-ui.js"></script>
 </head>
 <body>
 <div class="postContent">&nbsp;
-<div class="imageCaption"><img alt="Image of a record broken into numerous pieces" src="media/IRENEbrokendisc.png" style="width:60%;height:60%" /> <!-- <p class="imageCaption">Click me!</p> --><br />
-<br />
-&nbsp;</div>
+	<div class="imageCaption"><img alt="Image of a record broken into numerous pieces" src="media/IRENEbrokendisc.png" style="width:60%;height:60%" /> <!-- <p class="imageCaption">Click me!</p> --><br />
+		<br />
+		&nbsp;</div>
 
-<h2>IRENE<br />
-The ethics of scanning sound</h2>
-&nbsp;
+	<h2>IRENE<br />
+		The ethics of scanning sound</h2>
+	<br>
 
-<audio controls=""><source src="media/LT%203782%20Excerpt%20(broken%20record).mp3" type="audio/mpeg" /> Your browser does not support the audio element.</audio>
-&nbsp;
+	<div class="sm2-bar-ui compact flat full-width">
+		<div class="bd sm2-main-controls">
+			<div class="sm2-inline-texture"></div>
+			<div class="sm2-inline-gradient"></div>
+			<div class="sm2-inline-element sm2-button-element">
+				<div class="sm2-button-bd">
+					<a href="#play" class="sm2-inline-button play-pause">Play / pause</a>
+				</div>
+			</div>
+			<div class="sm2-inline-element sm2-inline-status">
+				<div class="sm2-playlist">
+					<div class="sm2-playlist-target">
+						<!-- playlist <ul> + <li> markup will be injected here -->
+						<!-- if you want default / non-JS content, you can put that here. -->
+						<noscript><p>JavaScript is required.</p></noscript>
+					</div>
+				</div>
+				<div class="sm2-progress">
+					<div class="sm2-row">
+						<div class="sm2-inline-time">0:00</div>
+						<div class="sm2-progress-bd">
+							<div class="sm2-progress-track">
+								<div class="sm2-progress-bar"></div>
+								<div class="sm2-progress-ball"><div class="icon-overlay"></div></div>
+							</div>
+						</div>
+						<div class="sm2-inline-duration">0:00</div>
+					</div>
+				</div>
+			</div>
+			<div class="sm2-inline-element sm2-button-element sm2-volume">
+				<div class="sm2-button-bd">
+					<span class="sm2-inline-button sm2-volume-control volume-shade"></span>
+					<a href="#volume" class="sm2-inline-button sm2-volume-control">volume</a>
+				</div>
+			</div>
+		</div>
 
-<p>This audio should be impossible. Yet it was extracted just last year from a broken record (pictured above) by the audio conservation team at the Northeast Document Conservation Center (NEDCC).<sup><a href="#fn1" id="ref1">1</a></sup> The technology behind the feat, IRENE, was made possible through twelve years of collaborative research by a team at the Lawrence Berkeley National Laboratory headed by Dr. Carl Haber with archivists at the Library of Congress. After its long gestation the technology has finally matured, and after a short trial period in 2014 the NEDCC now offers IRENE transfers as a service, open to the entire archival community.<sup><a href="#fn2" id="ref2">2</a></sup> As long as the service proves cost-effective, it is poised to revolutionize the world of audio digitization.</p>
+		<div class="bd sm2-playlist-drawer sm2-element">
 
-<p>There is only one issue: IRENE&#39;s particular method of extracting audio from a given source has no precedent, and exactly how to map its functionality to archival standards built for completely unrelated transfer processes remains an open question. IRENE does not physically play audio;&nbsp;it scans it, creating a virtual reconstruction of the sound based on the resulting imagery. And while this new method brings with it all sorts of new and exciting possibilities, it also poses a serious challenge to the assumptions archivists have made about the ideal nature, form, and purpose of digitized audio, running the gamut from sound quality to authenticity to even the primacy of sound over other possible representations of an audio artifact.</p>
+			<div class="sm2-inline-texture">
+				<div class="sm2-box-shadow"></div>
+			</div>
 
-<p>To understand the dilemma faced by the team behind IRENE and all the archivists who could benefit from its use, we first need to explore the science and technology of historical sound-based media, and the role that technology has played in setting modern standards for archival-quality audio digitization.</p>
+			<!-- playlist content is mirrored here -->
+			<div class="sm2-playlist-wrapper">
+				<ul class="sm2-playlist-bd">
+					<li><a href="media/LT%203782%20Excerpt%20(broken%20record).mp3"><b>NBC radio broadcast</b> - Christmas Eve, 1943</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-<h3>The science of early sound tech</h3>
+	<br>
+	<br>
 
-<h4>The transcription of sound</h4>
+	<p>This audio should be impossible. Yet it was extracted just last year from a shattered record (pictured above) by the audio conservation team at the Northeast Document Conservation Center (NEDCC).<sup><a href="#fn1" id="ref1">1</a></sup> The technology behind the feat, IRENE, was made possible through twelve years of collaborative research by a team at the Lawrence Berkeley National Laboratory headed by Dr. Carl Haber with archivists at the Library of Congress. After its long gestation the technology has finally matured, and after a short trial period in 2014 the NEDCC now offers IRENE transfers as a service, open to the entire archival community.<sup><a href="#fn2" id="ref2">2</a></sup> As long as the service proves cost-effective, it is poised to revolutionize the world of audio digitization.</p>
 
-<p>From its invention in the 1880s to the present day, sound recording has always been primarily about the <i>reversible</i> transcription of sound to some physical form.<sup><a href="#fn3" id="ref3">3</a></sup> Up until the 1970s the medium of choice was the record, its playback mechanism the motion of a stylus along its grooves. Within those constraints, however, a number of standards emerged. Most pertinent for our study, there were two primary means of recording audio signal: vertical cuts (the &quot;hill-and-dale&quot; approach), used primarily in cylinders; and lateral cuts, used in 78s, LPs, and lacquer discs.</p>
+	<p>There is only one issue: IRENE&#39;s particular method of extracting audio from a given source has no precedent, and exactly how to map its functionality to archival standards built for completely unrelated transfer processes remains an open question. IRENE does not physically play audio;&nbsp;it scans it, creating a virtual reconstruction of the sound based on the resulting imagery. And while this new method brings with it all sorts of new and exciting possibilities, it also poses a serious challenge to the assumptions archivists have made about the ideal nature, form, and purpose of digitized audio, running the gamut from sound quality to authenticity to even the primacy of sound over other possible representations of an audio artifact.</p>
 
-<p>In a vertical cut system, audio is recorded by moving a cutting stylus up and down in some relatively malleable surface at the frequency of the intended audio signal, resulting in a series of pits at varying depths and distances from each other. In this case, pit depth corresponds to loudness (deeper pockets means louder sound) while distance between valleys corresponds to frequency - sequences of valleys very close together produce higher pitches than those farther apart. During playback the stylus vibrates as it traverses these hills and valleys, resulting in the reproduction of the sound.</p>
+	<p>To understand the dilemma faced by the team behind IRENE and all the archivists who could benefit from its use, we first need to explore the science and technology of historical sound-based media, and the role that technology has played in setting modern standards for archival-quality audio digitization.</p>
 
-<p>Lateral cut systems are much the same, just translated to a different plane. Instead of moving up and down, the stylus wobbles left and right. Loudness is tracked to width of variation, and frequency to how close each curve in the groove is to the next. Although the translation between the two methods is deceptively simple, they result in significantly&nbsp;different playback behavior&nbsp;and&nbsp;fidelity limitations, both of which are detailed in later sections of this paper.</p>
+	<h3>The science of early sound tech</h3>
 
-<h4>The recording process</h4>
+	<h4>The transcription of sound</h4>
 
-<p>For the first two decades of the recording industry, when wax cylinders dominated as the media of choice, the hill-and-dale method was used almost exclusively. Their wax substrate made them relatively easy to manufacture, but also meant that playback was an&nbsp;inevitably destructive process, the pressure of the hard stylus grinding against the fragile&nbsp;grooves would eventually begin to wear away the hills and dales that carried the signal. Additionally, recording and playback were entirely acoustic processes,&nbsp;meaning that to record sound one needed a large horn to gather sound and focus it to a stylus on a single recorder, which would transcribe that signal onto a single blank cylinder. Since recordings could only be made to one cylinder at a time per recording device, to create any large run of a commercial records a performer had to repeatedly perform the same piece over and over again to a bank of recording phonographs until the desired number of records had been made.</p>
+	<p>From its invention in the 1880s to the present day, sound recording has always been primarily about the <i>reversible</i> transcription of sound to some physical form.<sup><a href="#fn3" id="ref3">3</a></sup> Up until the 1970s the medium of choice was the record, its playback mechanism the motion of a stylus along its grooves. Within those constraints, however, a number of standards emerged. Most pertinent for our study, there were two primary means of recording audio signal: vertical cuts (the &quot;hill-and-dale&quot; approach), used primarily in cylinders; and lateral cuts, used in 78s, LPs, and lacquer discs.</p>
 
-<div class="image"><img alt="A group of performers playing into a recording horn" src="media/HistoryBeardsley.Victor.jpg" /></div>
+	<p>In a vertical cut system, audio is recorded by moving a cutting stylus up and down in some relatively malleable surface at the frequency of the intended audio signal, resulting in a series of pits at varying depths and distances from each other. In this case, pit depth corresponds to loudness (deeper pockets means louder sound) while distance between valleys corresponds to frequency - sequences of valleys very close together produce higher pitches than those farther apart. During playback the stylus vibrates as it traverses these hills and valleys, resulting in the reproduction of the sound.</p>
 
-<p class="imageCaption">A group of players performing into a recording horn</p>
+	<p>Lateral cut systems are much the same, just translated to a different plane. Instead of moving up and down, the stylus wobbles left and right. Loudness is tracked to width of variation, and frequency to how close each curve in the groove is to the next. Although the translation between the two methods is deceptively simple, they result in significantly&nbsp;different playback behavior&nbsp;and&nbsp;fidelity limitations, both of which are detailed in later sections of this paper.</p>
 
-<p>These two problems - wax softness and&nbsp;limited potential for scale - led to some of the first innovations in recording technology. In the early 1900s Thomas Edison developed a new process that allowed him to make a metal mold of a master cylinder, enabling him to indiscriminately make copies of a single recording. In 1912 he popularized the use of celluloid instead of wax for cylinders with his successful Blue Amberol series, effectively solving the cylinder&#39;s fragility problem. To some extent, however, it was too little too late - although cylinders would continue to be produced to the end of the 1920s, they were already losing the commercial battle to flat discs.</p>
+	<h4>The recording process</h4>
 
-<p>Although the technology had existed since the 1880s, laterally-cut discs only became commercially successful in the early 1900s, when these new &quot;gramophone&quot; records directly competed against Edison&#39;s phonograph cylinders. Their primary advantage over cylinders, at least at first, was length - in 1901 a single 10&quot; record had twice the capacity of a cylinder. The recording process was similar to that of cylinders, utilizing large horns focused on single cutting styli, just with the signal transcribed laterally rather than vertically.</p>
+	<p>For the first two decades of the recording industry, when wax cylinders dominated as the media of choice, the hill-and-dale method was used almost exclusively. Their wax substrate made them relatively easy to manufacture, but also meant that playback was an&nbsp;inevitably destructive process, the pressure of the hard stylus grinding against the fragile&nbsp;grooves would eventually begin to wear away the hills and dales that carried the signal. Additionally, recording and playback were entirely acoustic processes,&nbsp;meaning that to record sound one needed a large horn to gather sound and focus it to a stylus on a single recorder, which would transcribe that signal onto a single blank cylinder. Since recordings could only be made to one cylinder at a time per recording device, to create any large run of a commercial records a performer had to repeatedly perform the same piece over and over again to a bank of recording phonographs until the desired number of records had been made.</p>
 
-<p>The next major innovation wouldn&#39;t come until 1924, when Western Electric first demonstrated electric recording technology to Victor and Columbia. The difference in quality between the two technologies - electric microphones and amplifiers vs. a physical stylus and a big horn - was remarkable. Most pertinently for our purposes, electric recording methods resulted in much higher frequency-range capture - where a record captured acoustically might contain frequencies of at maximum 4-6 kHz, an electrically-recorded record could easily double that. It also eliminated the need for performers to be directly in front of a recording horn to capture their sound, allowing, for example, full orchestras to be clearly captured - a feat not possible before the electric era. The main point to take away is this: beginning around 1926 audio experienced a remarkable jump in recording quality and fidelity. Before that date the physics of acoustic recording severely limited a recording&#39;s possible frequency range.</p>
+	<div class="image"><img alt="A group of performers playing into a recording horn" src="media/HistoryBeardsley.Victor.jpg" /></div>
 
-<div class="imageCaption">
-<audio controls=""><source src="media/acoustic_to_electric_example_Carmen.mp3" /></audio>
+	<p class="imageCaption">A group of players performing into a recording horn</p>
 
-<p>Demonstration of difference between acoustic and electric versions of a similar recording.<br />
-First half: 1924 acoustic recording of a selection from the prelude to Bizet&#39;s Carmen;<br />
-Second half: 1926 electric recording of the same work.<sup><a href="#fn12" id="ref12">4</a></sup></p>
-</div>
+	<p>These two problems - wax softness and&nbsp;limited potential for scale - led to some of the first innovations in recording technology. In the early 1900s Thomas Edison developed a new process that allowed him to make a metal mold of a master cylinder, enabling him to indiscriminately make copies of a single recording. In 1912 he popularized the use of celluloid instead of wax for cylinders with his successful Blue Amberol series, effectively solving the cylinder&#39;s fragility problem. To some extent, however, it was too little too late - although cylinders would continue to be produced to the end of the 1920s, they were already losing the commercial battle to flat discs.</p>
 
-<h3>IRENE - what it is and what it does</h3>
+	<p>Although the technology had existed since the 1880s, laterally-cut discs only became commercially successful in the early 1900s, when these new &quot;gramophone&quot; records directly competed against Edison&#39;s phonograph cylinders. Their primary advantage over cylinders, at least at first, was length - in 1901 a single 10&quot; record had twice the capacity of a cylinder. The recording process was similar to that of cylinders, utilizing large horns focused on single cutting styli, just with the signal transcribed laterally rather than vertically.</p>
 
-<p>At a very general level, IRENE is a consolidated system for scanning a record and digitally constructing an audio file based on the path a real stylus would have taken through the imaged physical grooves. Although it is commonly referred to in the singular sense, IRENE is actually a system made up of two completely different imaging technologies, one for 2-d capture (for laterally-cut media) and one for 3-d capture (for vertically cut media). Each comes with its own distinct suite of custom-built image-processing software: RENE for the 2-d system and PRISM for the 3-d. The software performs image analysis, generates a computed &quot;groove path&quot; along the entire record, allows a human operator to align images across cracks and breaks, performs optional image cleaning tasks, and outputs the final audio file according to the operator&#39;s specification.</p>
+	<p>The next major innovation wouldn&#39;t come until 1924, when Western Electric first demonstrated electric recording technology to Victor and Columbia. The difference in quality between the two technologies - electric microphones and amplifiers vs. a physical stylus and a big horn - was remarkable. Most pertinently for our purposes, electric recording methods resulted in much higher frequency-range capture - where a record captured acoustically might contain frequencies of at maximum 4-6 kHz, an electrically-recorded record could easily double that. It also eliminated the need for performers to be directly in front of a recording horn to capture their sound, allowing, for example, full orchestras to be clearly captured - a feat not possible before the electric era. The main point to take away is this: beginning around 1926 audio experienced a remarkable jump in recording quality and fidelity. Before that date the physics of acoustic recording severely limited a recording&#39;s possible frequency range.</p>
 
-<div class="image"><a href="media/Irene_CloseUp.jpg"><img alt="Image of an IRENE machine" src="media/Irene_CloseUp.jpg" width="800px" /></a>
+	<div class="imageCaption">
+		<div class="sm2-bar-ui compact flat full-width">
+			<div class="bd sm2-main-controls">
+				<div class="sm2-inline-texture"></div>
+				<div class="sm2-inline-gradient"></div>
+				<div class="sm2-inline-element sm2-button-element">
+					<div class="sm2-button-bd">
+						<a href="#play" class="sm2-inline-button play-pause">Play / pause</a>
+					</div>
+				</div>
+				<div class="sm2-inline-element sm2-inline-status">
+					<div class="sm2-playlist">
+						<div class="sm2-playlist-target">
+							<!-- playlist <ul> + <li> markup will be injected here -->
+							<!-- if you want default / non-JS content, you can put that here. -->
+							<noscript><p>JavaScript is required.</p></noscript>
+						</div>
+					</div>
+					<div class="sm2-progress">
+						<div class="sm2-row">
+							<div class="sm2-inline-time">0:00</div>
+							<div class="sm2-progress-bd">
+								<div class="sm2-progress-track">
+									<div class="sm2-progress-bar"></div>
+									<div class="sm2-progress-ball"><div class="icon-overlay"></div></div>
+								</div>
+							</div>
+							<div class="sm2-inline-duration">0:00</div>
+						</div>
+					</div>
+				</div>
+				<div class="sm2-inline-element sm2-button-element sm2-volume">
+					<div class="sm2-button-bd">
+						<span class="sm2-inline-button sm2-volume-control volume-shade"></span>
+						<a href="#volume" class="sm2-inline-button sm2-volume-control">volume</a>
+					</div>
+				</div>
+			</div>
 
-<p class="imageCaption">The 3-d IRENE scanning system set up and ready to go<br />
-Image courtesy of the NEDCC.</p>
-</div>
+			<div class="bd sm2-playlist-drawer sm2-element">
 
-<p>Making use of high-resolution microscopic imaging technology originally used in Dr. Carl Haber&#39;s high-energy physics lab, the system first&nbsp;scans the grooves of a record, which may be packed as closely as several hundred per inch, at huge resolutions. And when I say huge resolutions I truly do mean huge - the resulting image files for a single side of a 33RPM record can be collectively in excess of 30GB. Each sample taken by the 2-d scanner is 1px by 4096px, perpendicular to the grooves, and may cover 10-11 grooves in a single scan line.<sup><a href="#fn4" id="ref4">5</a></sup> The 3-d scanner takes depth measurements in 180 points along a 1.8mm line, with a total depth resolution of 120 nanometers.<sup><a href="#fn5" id="ref5">6</a></sup> Each line scanned is roughly equivalent to a single &quot;sample&quot; in the traditional audio digitization process (although this generalization is more accurate for the 2-d system than the 3-d system).</p>
+				<div class="sm2-inline-texture">
+					<div class="sm2-box-shadow"></div>
+				</div>
 
-<p>Scanning resolution directly relates to the maximum possible sampling rate of the resulting audio file. Say you want your resulting audio to have the archival standard of 96,000 samples per second, the Nyquist rate necessary to accurately capture audio frequencies up to 48 kHz (over twice the upper limit of human hearing). To calculate the required image resolution, you need only know the RPM of the record you are copying. Let&#39;s use a 160 RPM cylinder as the example: in this case, to find out how many image samples the machine has to take per revolution of the cylinder to be able to output audio at 96 kHz, one can use a simple formula:</p>
+				<!-- playlist content is mirrored here -->
+				<div class="sm2-playlist-wrapper">
+					<ul class="sm2-playlist-bd">
+						<li><a href="media/acoustic_to_electric_example_Carmen.mp3"><b>Acoustic to Electric transition</b> - Carmen, 1924 and 1926</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-<p>$$96,000 \frac{samples}{second} * 60 \frac{seconds}{minute} * \frac{1\ minute}{160\ revolutions} = 36,000 \frac{samples}{revolution}$$</p>
+		<p>Demonstration of difference between acoustic and electric versions of a similar recording.<br />
+			First half: 1924 acoustic recording of a selection from the prelude to Bizet&#39;s Carmen;<br />
+			Second half: 1926 electric recording of the same work.<sup><a href="#fn12" id="ref12">4</a></sup></p>
+	</div>
 
-<p>It follows that the slower the source RPM the more samples the machine must make: nearly 180,000 for 33RPM records, and 80,000 for 78RPM records. This is particularly important for the operation of IRENE: unlike traditional physical transfer processes, which can handle all transfers in real-time no matter the sampling rate, IRENE takes significantly longer for each step up in sampling quality. A 96kHz transfer will take twice as long as a 48kHz transfer. When staff time is limited and expensive this is not a trivial consideration.</p>
+	<h3>IRENE - what it is and what it does</h3>
 
-<p>Once it has calculated the sampling rate, IRENE then slowly rotates the cylinder, making the requisite number of image samples by carefully managing its rotation speed. After every complete rotation the lens shifts slightly to the side, to begin capturing a new set of 8-10 grooves. Once the entire record has been scanned, the hardware&#39;s job is done, and the process is taken up entirely by software, which begins by stitching the resulting set of images together. Assuming the record is unbroken, this can often be done completely automatically, without human intervention. Once the images are stitched, the software computes a single unbroken groove path through the entire record -- think of it as &quot;unraveling&quot; the record into one single, very long, straight groove.</p>
+	<p>At a very general level, IRENE is a consolidated system for scanning a record and digitally constructing an audio file based on the path a real stylus would have taken through the imaged physical grooves. Although it is commonly referred to in the singular sense, IRENE is actually a system made up of two completely different imaging technologies, one for 2-d capture (for laterally-cut media) and one for 3-d capture (for vertically cut media). Each comes with its own distinct suite of custom-built image-processing software: RENE for the 2-d system and PRISM for the 3-d. The software performs image analysis, generates a computed &quot;groove path&quot; along the entire record, allows a human operator to align images across cracks and breaks, performs optional image cleaning tasks, and outputs the final audio file according to the operator&#39;s specification.</p>
 
-<div class="image"><img align="middle" alt="Gif of IRENE scanning a disc" src="media/irene_scanning.gif" />
-<p class="imageCaption">IRENE scanning an aluminum record<br />
-Image courtesy of the NEDCC</p>
-</div>
+	<div class="image"><a href="media/Irene_CloseUp.jpg"><img alt="Image of an IRENE machine" src="media/Irene_CloseUp.jpg" width="800px" /></a>
 
-<p>Up to this point the process has taken on average 20-25 minutes, with one major exception: if the record is broken, images must be manually aligned, a painstaking process that can take up to 8 hours per side.<sup><a href="#fn6" id="ref6">7</a></sup> Once the scan and alignment is complete, the human operator has a number of options: they can complete the process by going straight to outputting audio, with a number of possible settings for frequency and bit-rate, or they can choose to use image-correction tools built into RENE and PRISM that utilize the unique nature of IRENE&#39;s image-based data to reduce noise in the resulting audio in ways that are not possible using traditional audio-processing tools.</p>
-<input checked="checked" id="img-1" name="radio-btn" type="radio" /><input id="img-2" name="radio-btn" type="radio" /><input id="img-3" name="radio-btn" type="radio" /><input id="img-4" name="radio-btn" type="radio" />
-<ul class="slides">
-	<li class="slide-container">
-	<div class="slide"><a href="media/2D%20Imaging%20Screenshot.png"><img src="media/2D%20Imaging%20Screenshot.png" /></a></div>
+		<p class="imageCaption">The 3-d IRENE scanning system set up and ready to go<br />
+			Image courtesy of the NEDCC.</p>
+	</div>
 
-	<div class="nav"><label class="prev" for="img-4">&lsaquo;</label> <label class="next" for="img-2">&rsaquo;</label></div>
-	</li>
-	<li class="slide-container">
-	<div class="slide"><a href="media/2D%20Analysis%20Screenshot.png"><img src="media/2D%20Analysis%20Screenshot.png" /></a></div>
+	<p>Making use of high-resolution microscopic imaging technology originally used in Dr. Carl Haber&#39;s high-energy physics lab, the system first&nbsp;scans the grooves of a record, which may be packed as closely as several hundred per inch, at huge resolutions. And when I say huge resolutions I truly do mean huge - the resulting image files for a single side of a 33RPM record can be collectively in excess of 30GB. Each sample taken by the 2-d scanner is 1px by 4096px, perpendicular to the grooves, and may cover 10-11 grooves in a single scan line.<sup><a href="#fn4" id="ref4">5</a></sup> The 3-d scanner takes depth measurements in 180 points along a 1.8mm line, with a total depth resolution of 120 nanometers.<sup><a href="#fn5" id="ref5">6</a></sup> Each line scanned is roughly equivalent to a single &quot;sample&quot; in the traditional audio digitization process (although this generalization is more accurate for the 2-d system than the 3-d system).</p>
 
-	<div class="nav"><label class="prev" for="img-1">&lsaquo;</label> <label class="next" for="img-3">&rsaquo;</label></div>
-	</li>
-	<li class="slide-container">
-	<div class="slide"><a href="media/3D%20Imaging%20Screenshot.png"><img src="media/3D%20Imaging%20Screenshot.png" /></a></div>
+	<p>Scanning resolution directly relates to the maximum possible sampling rate of the resulting audio file. Say you want your resulting audio to have the archival standard of 96,000 samples per second, the Nyquist rate necessary to accurately capture audio frequencies up to 48 kHz (over twice the upper limit of human hearing). To calculate the required image resolution, you need only know the RPM of the record you are copying. Let&#39;s use a 160 RPM cylinder as the example: in this case, to find out how many image samples the machine has to take per revolution of the cylinder to be able to output audio at 96 kHz, one can use a simple formula:</p>
 
-	<div class="nav"><label class="prev" for="img-2">&lsaquo;</label> <label class="next" for="img-4">&rsaquo;</label></div>
-	</li>
-	<li class="slide-container">
-	<div class="slide"><a href="media/3D%20Analysis%20Screenshot.png"><img src="media/3D%20Analysis%20Screenshot.png" /></a></div>
+	<p>$$96,000 \frac{samples}{second} * 60 \frac{seconds}{minute} * \frac{1\ minute}{160\ revolutions} = 36,000 \frac{samples}{revolution}$$</p>
 
-	<div class="nav"><label class="prev" for="img-3">&lsaquo;</label> <label class="next" for="img-1">&rsaquo;</label></div>
-	</li>
-	<li class="nav-dots"></li>
-</ul>
+	<p>It follows that the slower the source RPM the more samples the machine must make: nearly 180,000 for 33RPM records, and 80,000 for 78RPM records. This is particularly important for the operation of IRENE: unlike traditional physical transfer processes, which can handle all transfers in real-time no matter the sampling rate, IRENE takes significantly longer for each step up in sampling quality. A 96kHz transfer will take twice as long as a 48kHz transfer. When staff time is limited and expensive this is not a trivial consideration.</p>
 
-<p class="imageCaption">Screenshots of the RENE and PRISM software packages in action.<br />
-The first two images are the imaging and analysis modules of RENE and the second two are the same of PRISM.<br />
-Click to the right or left to navigate to the next image, or on the center to view the image full-size.<br />
-Courtesy of the NEDCC.</p>
+	<p>Once it has calculated the sampling rate, IRENE then slowly rotates the cylinder, making the requisite number of image samples by carefully managing its rotation speed. After every complete rotation the lens shifts slightly to the side, to begin capturing a new set of 8-10 grooves. Once the entire record has been scanned, the hardware&#39;s job is done, and the process is taken up entirely by software, which begins by stitching the resulting set of images together. Assuming the record is unbroken, this can often be done completely automatically, without human intervention. Once the images are stitched, the software computes a single unbroken groove path through the entire record -- think of it as &quot;unraveling&quot; the record into one single, very long, straight groove.</p>
 
-<h3>New paradigms and old standards</h3>
+	<div class="image"><img align="middle" alt="Gif of IRENE scanning a disc" src="media/irene_scanning.gif" />
+		<p class="imageCaption">IRENE scanning an aluminum record<br />
+			Image courtesy of the NEDCC</p>
+	</div>
 
-<p>Up until now I have avoided exploring IRENE&#39;s image-cleaning modules, and for good reason: this is where things start to really get hairy. The IRENE system has a number of capabilities that make it very hard to fit into the classical conception of what a sound-reproduction system is and what standards it should adhere to. To some degree trying to apply standards created in a pre-IRENE era to IRENE is like trying to fit a round peg in a square hole: they just don&#39;t apply. In this section I will explore some of these dissonances, and attempt to resolve them within the broader ethical framework of digital preservation.</p>
+	<p>Up to this point the process has taken on average 20-25 minutes, with one major exception: if the record is broken, images must be manually aligned, a painstaking process that can take up to 8 hours per side.<sup><a href="#fn6" id="ref6">7</a></sup> Once the scan and alignment is complete, the human operator has a number of options: they can complete the process by going straight to outputting audio, with a number of possible settings for frequency and bit-rate, or they can choose to use image-correction tools built into RENE and PRISM that utilize the unique nature of IRENE&#39;s image-based data to reduce noise in the resulting audio in ways that are not possible using traditional audio-processing tools.</p>
+	<input checked="checked" id="img-1" name="radio-btn" type="radio" /><input id="img-2" name="radio-btn" type="radio" /><input id="img-3" name="radio-btn" type="radio" /><input id="img-4" name="radio-btn" type="radio" />
+	<ul class="slides">
+		<li class="slide-container">
+			<div class="slide"><a href="media/2D%20Imaging%20Screenshot.png"><img src="media/2D%20Imaging%20Screenshot.png" /></a></div>
 
-<h4>Image as artifact</h4>
+			<div class="nav"><label class="prev" for="img-4">&lsaquo;</label> <label class="next" for="img-2">&rsaquo;</label></div>
+		</li>
+		<li class="slide-container">
+			<div class="slide"><a href="media/2D%20Analysis%20Screenshot.png"><img src="media/2D%20Analysis%20Screenshot.png" /></a></div>
 
-<p>The entire basis of IRENE&#39;s novelty and power lies in its unprecedented ability to reconstruct sound based on images of transcribed waveforms. The image is key here. One of the most important consequences of this functionality that must be worked through is the fact that the resulting image files have significant documentary importance in of themselves, possibly of even more value than the audio files derived from them. At 2-30GB depending on the source RPM and length, they universally contain more points of data than their derived audio, which range from under 100MB to just over 1GB, depending on length, sample rate, and bit depth.</p>
+			<div class="nav"><label class="prev" for="img-1">&lsaquo;</label> <label class="next" for="img-3">&rsaquo;</label></div>
+		</li>
+		<li class="slide-container">
+			<div class="slide"><a href="media/3D%20Imaging%20Screenshot.png"><img src="media/3D%20Imaging%20Screenshot.png" /></a></div>
 
-<p>In effect the scanned images, not the derived audio, become the de-facto digital surrogate for the record as it appeared at that specific point in time. They can be continually returned to as the audio derivation software improves, or as image cleaning techniques become more refined, and will remain unchanged as the original physical media continues to degrade over time. To some extent it is not at all facetious to say that the final audio-file created by the system is only a side-effect of IRENE&#39;s true purpose: the creation of a complete image-based facsimile of the media artifact. This turns the entire basis of audio digitization on its head - the audio-artifact has been satisfactorily digitized to such an extent that nothing but secondary evidence would be lost if the original artifact disappeared, but the information is contained in visual, not aural, form. The NEDCC recognizes this, and makes sure to provide copies of all IRENE images to its clients upon completion of a transfer, but communicating their importance compared to the audio files to each client may prove to be a challenge.</p>
+			<div class="nav"><label class="prev" for="img-2">&lsaquo;</label> <label class="next" for="img-4">&rsaquo;</label></div>
+		</li>
+		<li class="slide-container">
+			<div class="slide"><a href="media/3D%20Analysis%20Screenshot.png"><img src="media/3D%20Analysis%20Screenshot.png" /></a></div>
 
-<h4>Better than it ever was</h4>
+			<div class="nav"><label class="prev" for="img-3">&lsaquo;</label> <label class="next" for="img-1">&rsaquo;</label></div>
+		</li>
+		<li class="nav-dots"></li>
+	</ul>
 
-<p>To reproduce a sound of 1000 Hz a stylus must necessarily move either up and down or laterally 1000 times in a second. The higher the sound frequency the faster the stylus must move in those directions. This has two different but equally significant consequences for the two primary recording methods.</p>
+	<p class="imageCaption">Screenshots of the RENE and PRISM software packages in action.<br />
+		The first two images are the imaging and analysis modules of RENE and the second two are the same of PRISM.<br />
+		Click to the right or left to navigate to the next image, or on the center to view the image full-size.<br />
+		Courtesy of the NEDCC.</p>
 
-<p>In a laterally-cut record, due to increasing angular momentum the faster a stylus moves the higher it rides on the groove wall, and there is a threshold after which a sufficiently high and loud frequency might cause the stylus to jump out of its groove, skipping audio content. In a vertically-cut record, the higher the frequency the closer the &quot;hills and dales&quot; of the groove are to each other. These records have their own threshold after which a stylus might &quot;jump&quot; over successive hills, missing essential parts of the signal. Even if the stylus does not skip pits, it may just as easily only run over them lightly, resulting in a lower volume at high frequencies than was originally recorded. The faster the RPM of the original media, the higher the likelihood of this effect, meaning that at 160RPM, cylinders are at the most disadvantage.</p>
+	<h3>New paradigms and old standards</h3>
 
-<p>These limitations are governed by laws of physics, and cannot be overcome with traditional stylus-based playback systems. Since IRENE does not rely on a stylus, this problem does not apply to its transfers. This means that compared to any traditional playback device IRENE has a much more flat frequency response as frequencies increase - where a physical playback device might display a downward sloping response curve as frequencies rise, IRENE does no such thing. This is clearly demonstrated when comparing an IRENE transfer to one done to even the most modern of archival-quality cylinder playback machines, as seen in Fig. 1.</p>
+	<p>Up until now I have avoided exploring IRENE&#39;s image-cleaning modules, and for good reason: this is where things start to really get hairy. The IRENE system has a number of capabilities that make it very hard to fit into the classical conception of what a sound-reproduction system is and what standards it should adhere to. To some degree trying to apply standards created in a pre-IRENE era to IRENE is like trying to fit a round peg in a square hole: they just don&#39;t apply. In this section I will explore some of these dissonances, and attempt to resolve them within the broader ethical framework of digital preservation.</p>
+
+	<h4>Image as artifact</h4>
+
+	<p>The entire basis of IRENE&#39;s novelty and power lies in its unprecedented ability to reconstruct sound based on images of transcribed waveforms. The image is key here. One of the most important consequences of this functionality that must be worked through is the fact that the resulting image files have significant documentary importance in of themselves, possibly of even more value than the audio files derived from them. At 2-30GB depending on the source RPM and length, they universally contain more points of data than their derived audio, which range from under 100MB to just over 1GB, depending on length, sample rate, and bit depth.</p>
+
+	<p>In effect the scanned images, not the derived audio, become the de-facto digital surrogate for the record as it appeared at that specific point in time. They can be continually returned to as the audio derivation software improves, or as image cleaning techniques become more refined, and will remain unchanged as the original physical media continues to degrade over time. To some extent it is not at all facetious to say that the final audio-file created by the system is only a side-effect of IRENE&#39;s true purpose: the creation of a complete image-based facsimile of the media artifact. This turns the entire basis of audio digitization on its head - the audio-artifact has been satisfactorily digitized to such an extent that nothing but secondary evidence would be lost if the original artifact disappeared, but the information is contained in visual, not aural, form. The NEDCC recognizes this, and makes sure to provide copies of all IRENE images to its clients upon completion of a transfer, but communicating their importance compared to the audio files to each client may prove to be a challenge.</p>
+
+	<h4>Better than it ever was</h4>
+
+	<p>To reproduce a sound of 1000 Hz a stylus must necessarily move either up and down or laterally 1000 times in a second. The higher the sound frequency the faster the stylus must move in those directions. This has two different but equally significant consequences for the two primary recording methods.</p>
+
+	<p>In a laterally-cut record, due to increasing angular momentum the faster a stylus moves the higher it rides on the groove wall, and there is a threshold after which a sufficiently high and loud frequency might cause the stylus to jump out of its groove, skipping audio content. In a vertically-cut record, the higher the frequency the closer the &quot;hills and dales&quot; of the groove are to each other. These records have their own threshold after which a stylus might &quot;jump&quot; over successive hills, missing essential parts of the signal. Even if the stylus does not skip pits, it may just as easily only run over them lightly, resulting in a lower volume at high frequencies than was originally recorded. The faster the RPM of the original media, the higher the likelihood of this effect, meaning that at 160RPM, cylinders are at the most disadvantage.</p>
+
+	<p>These limitations are governed by laws of physics, and cannot be overcome with traditional stylus-based playback systems. Since IRENE does not rely on a stylus, this problem does not apply to its transfers. This means that compared to any traditional playback device IRENE has a much more flat frequency response as frequencies increase - where a physical playback device might display a downward sloping response curve as frequencies rise, IRENE does no such thing. This is clearly demonstrated when comparing an IRENE transfer to one done to even the most modern of archival-quality cylinder playback machines, as seen in Fig. 1.</p>
 </div>
 
 <figure class="imageCaption">
-<div class="image-slider">
-<div><img alt="Spectrograph of a stylus tranfer of the same recording" src="media/Spectrum%20analysis%20-%20NEDCC.PNG" /></div>
-<img alt="Spectrograph of an IRENE tranfer" src="media/Spectrum%20analysis%20-%20UCSB.PNG" /></div>
-<figcaption class="imageCaption">Fig. 1 - Spectrum analysis of an IRENE transfer vs. an Archeophone transfer of the same recording.<br />
-Drag the slider to compare. For any slider position, the image to the left of the slider represents the IRENE transfer, with the remaining image representing the Archeophone transfer.<br />
-Archeophone example courtesy of the UCSB Special Collections.<sup><a href="#fn7" id="ref7">8</a></sup><br />
-Images by the author. </figcaption></figure>
+	<div class="image-slider">
+		<div><img alt="Spectrograph of a stylus tranfer of the same recording" src="media/Spectrum%20analysis%20-%20NEDCC.PNG" /></div>
+		<img alt="Spectrograph of an IRENE tranfer" src="media/Spectrum%20analysis%20-%20UCSB.PNG" /></div>
+	<figcaption class="imageCaption">Fig. 1 - Spectrum analysis of an IRENE transfer vs. an Archeophone transfer of the same recording.<br />
+		Drag the slider to compare. For any slider position, the image to the left of the slider represents the IRENE transfer, with the remaining image representing the Archeophone transfer.<br />
+		Archeophone example courtesy of the UCSB Special Collections.<sup><a href="#fn7" id="ref7">8</a></sup><br />
+		Images by the author. </figcaption></figure>
 
 <div class="postContent">&nbsp;
-<p>As you can see, there is a significant difference in the higher registers, with the IRENE transfer technically representing a more accurate reflection of the information content of the artifact. No machine has ever been able to reproduce those high frequencies to that accuracy. Literally no one has ever heard the content of that record reproduced so accurately.</p>
+	<p>As you can see, there is a significant difference in the higher registers, with the IRENE transfer technically representing a more accurate reflection of the information content of the artifact. No machine has ever been able to reproduce those high frequencies to that accuracy. Literally no one has ever heard the content of that record reproduced so accurately.</p>
 
-<p>This fact is simultaneously both awesome and problematic, and reaches to the heart of many of the ethical challenges an archivist might face when deciding on the use of any IRENE-like system for their own media. On the one hand audio-visual archivists have been striving towards the highest standards of digital accuracy for as long as there has been digitization - after all, you want to represent the physical object as faithfully as your technology will allow. But what is an archivist to do when the artifact is perfect, but the playback mechanism -- the only way through which historical users of the media ever experienced it -- was flawed to begin with? If your aim is to digitally recreate what users <i>heard</i>, then IRENE, without the physical limitations of a stylus, is too accurate. If your aim is to represent the information held in the object itself as perfectly as possible, however, then IRENE is without question the best choice.</p>
+	<p>This fact is simultaneously both awesome and problematic, and reaches to the heart of many of the ethical challenges an archivist might face when deciding on the use of any IRENE-like system for their own media. On the one hand audio-visual archivists have been striving towards the highest standards of digital accuracy for as long as there has been digitization - after all, you want to represent the physical object as faithfully as your technology will allow. But what is an archivist to do when the artifact is perfect, but the playback mechanism -- the only way through which historical users of the media ever experienced it -- was flawed to begin with? If your aim is to digitally recreate what users <i>heard</i>, then IRENE, without the physical limitations of a stylus, is too accurate. If your aim is to represent the information held in the object itself as perfectly as possible, however, then IRENE is without question the best choice.</p>
 
-<p>If your archival predilection allows, all of this may be made moot by the application of bit of EQ to the IRENE transfer.</p>
+	<p>If your archival predilection allows, all of this may be made moot by the application of bit of EQ to the IRENE transfer.</p>
 
-<h4>New affordances</h4>
+	<h4>New affordances</h4>
 
-<p>The fact that IRENE creates audio out of an image, and not physical vibrations, means that it can utilize already well-developed image analysis techniques to clean the image before deriving its audio. This is where most archivists will balk, being trained to always digitize material &quot;as-is,&quot; and not &quot;as-was&quot; or &quot;as-ideal&quot; but I think there is a good argument to made towards their application, even in cases where similar functionality in an audio editor would be unacceptable.</p>
+	<p>The fact that IRENE creates audio out of an image, and not physical vibrations, means that it can utilize already well-developed image analysis techniques to clean the image before deriving its audio. This is where most archivists will balk, being trained to always digitize material &quot;as-is,&quot; and not &quot;as-was&quot; or &quot;as-ideal&quot; but I think there is a good argument to made towards their application, even in cases where similar functionality in an audio editor would be unacceptable.</p>
 
-<p>Some of the potential improvements are no-brainers, such as the capability to reconstruct mono audio based on only one side of the groove wall if the other is damaged, as is often the case in lacquer recordings, or the ability to manually stitch image grooves together to be able to virtually play a broken or physically damaged record. Other capabilities float tantalizingly in something more of an ethical gray area.</p>
+	<p>Some of the potential improvements are no-brainers, such as the capability to reconstruct mono audio based on only one side of the groove wall if the other is damaged, as is often the case in lacquer recordings, or the ability to manually stitch image grooves together to be able to virtually play a broken or physically damaged record. Other capabilities float tantalizingly in something more of an ethical gray area.</p>
 
-<p>Perhaps the most interesting of these capabilities lies in a module known as &quot;blob-clean&quot;, available only in the PRISM 3-d image software. Utilizing depth information, the system can intelligently find bits of the image that are height outliers, remove them, then interpolate what should exist in that space based on the contents of the image around it. This is potentially a very powerful tool, and can greatly improve the resulting audio quality: effectively it removes noise caused by any unwanted debris or physical damage to the cylinder. It is especially effective at removing mold damage, a serious issue endemic to the cylinder world. Fig. 2 shows the effect of blob-clean very clearly (drag the white slider on the image to switch between the two versions).</p>
+	<p>Perhaps the most interesting of these capabilities lies in a module known as &quot;blob-clean&quot;, available only in the PRISM 3-d image software. Utilizing depth information, the system can intelligently find bits of the image that are height outliers, remove them, then interpolate what should exist in that space based on the contents of the image around it. This is potentially a very powerful tool, and can greatly improve the resulting audio quality: effectively it removes noise caused by any unwanted debris or physical damage to the cylinder. It is especially effective at removing mold damage, a serious issue endemic to the cylinder world. Fig. 2 shows the effect of blob-clean very clearly (drag the white slider on the image to switch between the two versions).</p>
 </div>
 
 <p></p>
@@ -163,112 +271,262 @@ Images by the author. </figcaption></figure>
 <p></p>
 
 <figure class="imageCaption">
-<div class="image-slider">
-<div><img alt="Spectrograph of audio created from IRENE images with blob-clean module applied" src="media/cylinder_blob_clean.PNG" /></div>
-<img alt="Spectrograph of audio created from IRENE images without blob-clean module" src="media/cylinder_no_blob_clean.PNG" /></div>
-<figcaption class="imageCaption">Fig. 2 - Before/after spectrograph of a cylinder processed with and without PRISM&#39;s &quot;blob clean&quot; mode activated.<br />
-Drag the slider to compare. For any slider position, the image to the left of the slider represents the version with blob-clean, with the remaining image representing the unaltered original.<sup><a href="#fn8" id="ref8">9</a></sup><br />
-Images by the author. </figcaption></figure>
+	<div class="image-slider">
+		<div><img alt="Spectrograph of audio created from IRENE images with blob-clean module applied" src="media/cylinder_blob_clean.PNG" /></div>
+		<img alt="Spectrograph of audio created from IRENE images without blob-clean module" src="media/cylinder_no_blob_clean.PNG" /></div>
+	<figcaption class="imageCaption">Fig. 2 - Before/after spectrograph of a cylinder processed with and without PRISM&#39;s &quot;blob clean&quot; mode activated.<br />
+		Drag the slider to compare. For any slider position, the image to the left of the slider represents the version with blob-clean, with the remaining image representing the unaltered original.<sup><a href="#fn8" id="ref8">9</a></sup><br />
+		Images by the author. </figcaption></figure>
 
 <p></p>
 
 <p></p>
 
 <div class="postContent">&nbsp;
-<figure class="imageCaption">
-<audio controls=""><source src="media/Cylinder%20without%20blob%20clean.mp3" type="audio/mpeg" /> Your browser does not support the audio element.</audio>
-<figcaption class="imageCaption">Cylinder without blob-clean correction</figcaption></figure>
-&nbsp;
+	<figure class="imageCaption">
 
-<figure class="imageCaption">
-<audio controls=""><source src="media/Cylinder%20with%20blob%20clean.mp3" type="audio/mpeg" /> Your browser does not support the audio element.</audio>
-<figcaption class="imageCaption">Cylinder with blob-clean correction</figcaption></figure>
-&nbsp;
+		<div class="sm2-bar-ui compact flat full-width">
+			<div class="bd sm2-main-controls">
+				<div class="sm2-inline-texture"></div>
+				<div class="sm2-inline-gradient"></div>
+				<div class="sm2-inline-element sm2-button-element">
+					<div class="sm2-button-bd">
+						<a href="#play" class="sm2-inline-button play-pause">Play / pause</a>
+					</div>
+				</div>
+				<div class="sm2-inline-element sm2-inline-status">
+					<div class="sm2-playlist">
+						<div class="sm2-playlist-target">
+							<!-- playlist <ul> + <li> markup will be injected here -->
+							<!-- if you want default / non-JS content, you can put that here. -->
+							<noscript><p>JavaScript is required.</p></noscript>
+						</div>
+					</div>
+					<div class="sm2-progress">
+						<div class="sm2-row">
+							<div class="sm2-inline-time">0:00</div>
+							<div class="sm2-progress-bd">
+								<div class="sm2-progress-track">
+									<div class="sm2-progress-bar"></div>
+									<div class="sm2-progress-ball"><div class="icon-overlay"></div></div>
+								</div>
+							</div>
+							<div class="sm2-inline-duration">0:00</div>
+						</div>
+					</div>
+				</div>
+				<div class="sm2-inline-element sm2-button-element sm2-volume">
+					<div class="sm2-button-bd">
+						<span class="sm2-inline-button sm2-volume-control volume-shade"></span>
+						<a href="#volume" class="sm2-inline-button sm2-volume-control">volume</a>
+					</div>
+				</div>
+			</div>
 
-<p>As you can see and hear, there is a significant difference, particularly towards the second half of the example recording. To hear exactly what has been changed in the audio through the image-correction process, it is possible to subtract the two audio signals from each other, resulting in the following file:</p>
+			<div class="bd sm2-playlist-drawer sm2-element">
 
-<figure class="imageCaption">
-<audio controls=""><source src="media/NEDCC_cyl_subtracted.mp3" type="audio/mpeg" /> Your browser does not support the audio element.</audio>
-<figcaption class="imageCaption">Audio representation of image modifications made by the blob-clean module. Because this is representative of all changes made, and not just noise removed, both the removed artifacts and their interpolated reconstructions are audible, though the removed artifacts are much easier to hear.</figcaption></figure>
-&nbsp;
+				<div class="sm2-inline-texture">
+					<div class="sm2-box-shadow"></div>
+				</div>
 
-<p>The difference is great enough, and so hard to reproduce using traditional audio processing methods (normal declick and decrackle modules do not function well with cylinder noise), that even the NEDCC tends to recommend the use of this module to its clients, although it does not turn it on by default. <sup><a href="#fn9" id="ref9">10</a></sup></p>
-
-<p>The 2-d imaging software has its own analog to the 3-d blob module, known as &quot;cuts,&quot; using a different method. It too is quite effective, though not to quite the same &quot;magical&quot; extent as the blob clean. While the NEDCC does occasionally recommend the use of the blobs module to improve cylinder audio, it uses the cuts module much less frequently..</p>
-
-<h4>Practicalities</h4>
-
-<p>IRENE is a highly specialized piece of equipment (machines only exist at the moment at the NEDCC, the Berkeley lab, and the Library of Congress), and requires a non-trivial amount of training to use. While undamaged records take on average 20-25 minutes to process, transfer times for IRENE&#39;s most game-changing use, the reproduction of audio from physically broken or significantly damaged records, can take upwards of 8 hours of constant staff time. Furthermore, as detailed above increasing the desired audio quality has a direct linear affect on the amount of time that record will take to scan.</p>
-
-<p>The system is rare enough and its use is expensive enough that the time taken for each transfer is a significant factor in the financial viability of its use as a service - both for the institution hosting the service and for clients looking to use the system for their own collections. Limitations on time are in direct conflict with the enormous amount of material out there that would benefit from IRENE digitization. This conflict places ongoing arguments in the field about the practical suitability of commonly recommended digitization standards in stark relief. This is especially the case for media in which the original recorded signal never rises above a relatively limited frequency range or below high noise-floor -- after all, why spend twice the time digitizing a cylinder whose original recorded signal never goes above 7kHz at a quality of 96kHz and 24 bits when you could capture the exact same signal with no practical loss at 48kHz and 16 bits? That immediately cuts the cost in half, with no discernible loss in audio content.</p>
-
-<p>This is, in fact, what the NEDCC is already doing - their standard master quality for cylinders is 48 kHz and 16 bits.<sup><a href="#fn10" id="ref10">11</a></sup> Although this choice is in opposition of current accepted standards for archival-quality masters of music-based content,<sup><a href="#fn11" id="ref11">12</a></sup> this is a situation where I believe a legitimate case could be made for an exception. If making this choice allows the NEDCC to make their service more affordable to low-budget institutions while enabling them to digitize twice as many cylinders, and if nothing of evidentiary value is lost in the process, I can see nothing but benefits to the decision. In all non-cylinder cases, even acoustically-recorded gramophone discs, the NEDCC is sticking to the 96kHz 24 bit standard.</p>
-
-<hr />
-<p>The IRENE system is a truly&nbsp;disruptive technology in the world of audio digitization. With its now well-established presence in the audio archiving community, it&nbsp;will continue to force archivists to grapple with the assumptions they have&nbsp;made about what it means to digitize an audio recording, and how to translate physical digitization processes for audio&nbsp;to the visual realm, for some time. The only way to progress as a professional community is through such struggle, and as IRENE forces us to confront our assumptions about sound I believe we will come out the better for it.<br />
-&nbsp;</p>
-
-<hr />
-<div class="footnotes">
-<ol>
-	<li><sup class="footnote" id="fn1">NEDCC Audio Preservation Center, WNYC radio broadcast disc, recorded Dec. 24, 1943. Held by the New York City Municipal Archives. See the related NEDCC Seeing Sound blog post <a href="https://www.nedcc.org/audio-preservation/irene-blog/2014/06/20/damaged-media/">here</a>. <a href="#ref1" title="Jump back to footnote location.">↩</a></sup></li>
-	<br />
-	<li><sup class="footnote" id="fn2">NEDCC, &quot;<a href="https://www.nedcc.org/audio-preservation/irene-blog/2014/11/18/irene-now-available/">IRENE Audio Preservation Service Now Available!</a>.&quot; Nov. 18, 2014. <a href="#ref2" title="Jump back to footnote location.">↩</a></sup></li>
-	<br />
-	<li><sup class="footnote" id="fn3">This definition conveniently ignores the earliest experiments in sound transcription by &Eacute;douard-L&eacute;on Scott de Martinville in the late 1850s-60s. Although his phonautograms can technically be played back using modern technology, (a feat <a href="http://www.firstsounds.org/sounds/scott.php">successfully accomplished in 2007-2008</a> by the <a href="http://www.firstsounds.org/">First Sounds collaboration</a>), to the best of our knowledge they were not created with the intention of playback. <a href="#ref3" title="Jump back to footnote location.">↩</a></sup></li>
-	<br />
-	<li><sup class="footnote" id="fn12">Example 1: Georges Bizet, &quot;Carmen - Selection&quot; [performed by Alan Maclean and the New Queen&#39;s Hall Light Orchestra], 1923. Columbia L-1485.<br />
-	<br />
-	Example 2: Georges Bizet, &quot;Carmen - Selection&quot; [performed by Percy Pitt and the BBC Wireless Symphony Orchestra], 1926. Columbia 9125.<br />
-	<br />
-	Both transfers done by Damian J. Rogan, available on <a href="http://music.damians78s.co.uk/">his website</a>. <a href="#ref12" title="Jump back to footnote location.">↩</a></sup></li>
-	<br />
-	<li><sup class="footnote" id="fn4">E.W. Cornell <i>et al</i> (Lawrence Berkeley National Laboratory) and P. Alyea <i>et al</i> (Library of Congress), &quot;<a href="http://irene.lbl.gov/2D-Scanning.pdf">2D Optical Scanning of Mechanical Sound Carriers: Technical Description</a>&quot; (6-29-2009), p.2. <a href="#ref4" title="Jump back to footnote location.">↩</a></sup></li>
-	<br />
-	<li><sup class="footnote" id="fn5">E.W. Cornell <i>et al</i> (Lawrence Berkeley National Laboratory) and P. Alyea <i>et al</i> (Library of Congress), &quot;<a href="http://irene.lbl.gov/3D-Scanning.pdf">3D Optical Scanning of Mechanical Sound Carriers: Technical Description</a>&quot; (6-29-2009), p.10. <a href="#ref5" title="Jump back to footnote location.">↩</a></sup></li>
-	<br />
-	<li><sup class="footnote" id="fn6">From author&#39;s interview with NEDCC Audio Preservation Specialist Mason Vander Lugt. <a href="#ref6" title="Jump back to footnote location.">↩</a></sup></li>
-	<br />
-	<li><sup class="footnote" id="fn7">Percy Wenrich, &quot;Down in blossom row&quot; [Byron G. Harlan, performing]. Edison Gold Moulded Record: 9004. Archeophone-digitized recording courtesy of the UC Santa Barbara Library Special Collections. IRENE transfer from the NEDCC. <a href="#ref7" title="Jump back to footnote location.">↩</a></sup></li>
-	<br />
-	<li><sup class="footnote" id="fn8">Percy Wenrich, &quot;Down in blossom row&quot; [Byron G. Harlan, performing]. Edison Gold Moulded Record: 9004. Versions with and without blob-correction courtesy of the NEDCC. <a href="#ref8" title="Jump back to footnote location.">↩</a></sup></li>
-	<br />
-	<li><sup class="footnote" id="fn9">NEDCC, <i>IRENE Documentation for Clients (3D image data)</i>. [c.2015], p. 1. <a href="#ref9" title="Jump back to footnote location.">↩</a></sup></li>
-	<br />
-	<li><sup class="footnote" id="fn10">NEDCC, <i>Proposal template for IRENE service</i> (draft). [c.2015], p. 3. <a href="#ref10" title="Jump back to footnote location.">↩</a></sup></li>
-	<br />
-	<li><sup class="footnote" id="fn11">Most accepted best-practice recommendations suggest 96 kHz for all audio digitization, including The International Association of Sound and Audiovisual Archives&#39; &quot;<a href="http://www.iasa-web.org/tc04/audio-preservation">Guidelines on the Production and Preservation of Digital Audio Objects&quot;</a> (2009) and the Harvard-Indiana <a href="http://www.dlib.indiana.edu/projects/sounddirections/papersPresent/sd_bp_07.pdf"><i>Sound Directions</i></a> report (2007). The NEDCC references the relatively new FADGI &quot;<a href="http://www.archives.gov/preservation/products/products/aud-p2.html">Audio Limited Capture</a>&quot; [AUD-P2] standard to justify their choice. While I personally agree with the decision, it is worth noting that the FADGI document gives only the example of &quot;spoken word recordings&quot; as something to which the standard should apply. <a href="#ref11" title="Jump back to footnote location.">↩</a></sup></li>
-	<br />
-	<br />
-	<br />
-	<br />
+				<!-- playlist content is mirrored here -->
+				<div class="sm2-playlist-wrapper">
+					<ul class="sm2-playlist-bd">
+						<li><a href="media/Cylinder%20without%20blob%20clean.mp3"><b>Byron G. Harlan</b> - Down in Blossom Row (no blob-correction)</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<figcaption class="imageCaption">Cylinder without blob-clean correction</figcaption></figure>
 	&nbsp;
-	<li></li>
-</ol>
-</div>
 
-<hr />
-<h4>Sources</h4>
+	<figure class="imageCaption">
+		<div class="sm2-bar-ui compact flat full-width">
+			<div class="bd sm2-main-controls">
+				<div class="sm2-inline-texture"></div>
+				<div class="sm2-inline-gradient"></div>
+				<div class="sm2-inline-element sm2-button-element">
+					<div class="sm2-button-bd">
+						<a href="#play" class="sm2-inline-button play-pause">Play / pause</a>
+					</div>
+				</div>
+				<div class="sm2-inline-element sm2-inline-status">
+					<div class="sm2-playlist">
+						<div class="sm2-playlist-target">
+							<!-- playlist <ul> + <li> markup will be injected here -->
+							<!-- if you want default / non-JS content, you can put that here. -->
+							<noscript><p>JavaScript is required.</p></noscript>
+						</div>
+					</div>
+					<div class="sm2-progress">
+						<div class="sm2-row">
+							<div class="sm2-inline-time">0:00</div>
+							<div class="sm2-progress-bd">
+								<div class="sm2-progress-track">
+									<div class="sm2-progress-bar"></div>
+									<div class="sm2-progress-ball"><div class="icon-overlay"></div></div>
+								</div>
+							</div>
+							<div class="sm2-inline-duration">0:00</div>
+						</div>
+					</div>
+				</div>
+				<div class="sm2-inline-element sm2-button-element sm2-volume">
+					<div class="sm2-button-bd">
+						<span class="sm2-inline-button sm2-volume-control volume-shade"></span>
+						<a href="#volume" class="sm2-inline-button sm2-volume-control">volume</a>
+					</div>
+				</div>
+			</div>
 
-<ul class="sources">
-	<li>Mike Casey (Indiana University) and Bruce Gordon (Harvard University) et al, <i><a href="http://www.dlib.indiana.edu/projects/sounddirections/papersPresent/sd_bp_07.pdf">Sound Directions: Best Practices For Audio Preservation</a></i>. 2007.</li>
-	<li>Romain Crausaz, &ldquo;Bellrecords &ndash; Analysis of Historical Sound Recordings.&rdquo; Bachelors thesis on building an improved version of Blob Correction for the PRISM software used by IRENE, Lawrence Berkeley National Laboratory (August 2013)</li>
-	<li>Vitaliy Fadeyev and Carl Haber, &ldquo;<a href="http://www-cdf.lbl.gov/~av/JAES-paper-LBNL.pdf">Reconstruction of Mechanically Recorded Sound by Image Processing</a>.&rdquo; LBNL Report 51983, March 2003.</li>
-	<li>Vitaliy Fadeyev and Carl Haber, &ldquo;<a href="http://www-cdf.lbl.gov/~av/cylinder-paper-PVF.pdf">Reconstruction of Recorded Sound from an Edison Cylinder using Three-Dimensional Non-Contact Optical Surface Metrology</a>.&rdquo; LBNL Report 54927, August 2004.</li>
-	<li>Carl Haber, &ldquo;<a href="http://bio16p.lbl.gov/pahma.html">Examples and Background Information from the University of California at Berkeley Phoebe Hearst Museum of Anthropology Sound Recordings Restoration Proposal</a>.&rdquo; Last updated Dec 18, 2014.</li>
-	<li>Carl Haber, &ldquo;<a href="http://irene.lbl.gov/">IRENE Sound Reproduction R &amp; D Home Page</a>.&rdquo; Last updated 2013.</li>
-	<li>International Association of Sound and Audiovisual Archives, &quot;<a href="http://www.iasa-web.org/tc04/audio-preservation">Guidelines on the Production and Preservation of Digital Audio Objects&quot;</a> (Second edition, 2009)</li>
-	<li>Mason Vander Lugt, Webcast: &ldquo;<a href="http://vimeo.com/111864400">Introducing IRENE: Digitizing Historical Audio</a>.&rdquo; November 2014.</li>
-	<li>Northeast Document Conservation Center, &ldquo;<a href="https://www.nedcc.org/audio-preservation/irene-blog/">IRENE Seeing Sound Blog</a>.&rdquo; Last updated Nov. 18, 2014.</li>
-</ul>
+			<div class="bd sm2-playlist-drawer sm2-element">
 
-<h4>Interviews</h4>
+				<div class="sm2-inline-texture">
+					<div class="sm2-box-shadow"></div>
+				</div>
 
-<ul class="sources">
-	<li>Phone interview with Dr. Carl Haber, inventor of the IRENE system and Senior Scientist at the Lawrence Berkeley National Laboratory &ndash; Feb 6, 2015</li>
-	<li>Phone interview with Mason Vander Lugt, Audio Preservation Specialist at the NEDCC &ndash; Feb 5, 2015</li>
-</ul>
-<br />
-&nbsp;</div>
+				<!-- playlist content is mirrored here -->
+				<div class="sm2-playlist-wrapper">
+					<ul class="sm2-playlist-bd">
+						<li><a href="media/Cylinder%20with%20blob%20clean.mp3"><b>Byron G. Harlan</b> - Down in Blossom Row (with blob-correction)</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<figcaption class="imageCaption">Cylinder with blob-clean correction</figcaption></figure>
+	&nbsp;
+
+	<p>As you can see and hear, there is a significant difference, particularly towards the second half of the example recording. To hear exactly what has been changed in the audio through the image-correction process, it is possible to subtract the two audio signals from each other, resulting in the following file:</p>
+
+	<figure class="imageCaption">
+		<div class="sm2-bar-ui compact flat full-width">
+			<div class="bd sm2-main-controls">
+				<div class="sm2-inline-texture"></div>
+				<div class="sm2-inline-gradient"></div>
+				<div class="sm2-inline-element sm2-button-element">
+					<div class="sm2-button-bd">
+						<a href="#play" class="sm2-inline-button play-pause">Play / pause</a>
+					</div>
+				</div>
+				<div class="sm2-inline-element sm2-inline-status">
+					<div class="sm2-playlist">
+						<div class="sm2-playlist-target">
+							<!-- playlist <ul> + <li> markup will be injected here -->
+							<!-- if you want default / non-JS content, you can put that here. -->
+							<noscript><p>JavaScript is required.</p></noscript>
+						</div>
+					</div>
+					<div class="sm2-progress">
+						<div class="sm2-row">
+							<div class="sm2-inline-time">0:00</div>
+							<div class="sm2-progress-bd">
+								<div class="sm2-progress-track">
+									<div class="sm2-progress-bar"></div>
+									<div class="sm2-progress-ball"><div class="icon-overlay"></div></div>
+								</div>
+							</div>
+							<div class="sm2-inline-duration">0:00</div>
+						</div>
+					</div>
+				</div>
+				<div class="sm2-inline-element sm2-button-element sm2-volume">
+					<div class="sm2-button-bd">
+						<span class="sm2-inline-button sm2-volume-control volume-shade"></span>
+						<a href="#volume" class="sm2-inline-button sm2-volume-control">volume</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="bd sm2-playlist-drawer sm2-element">
+
+				<div class="sm2-inline-texture">
+					<div class="sm2-box-shadow"></div>
+				</div>
+
+				<!-- playlist content is mirrored here -->
+				<div class="sm2-playlist-wrapper">
+					<ul class="sm2-playlist-bd">
+						<li><a href="media/NEDCC_cyl_subtracted.mp3">difference between corrected and uncorrected audio</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<figcaption class="imageCaption">Audio representation of image modifications made by the blob-clean module. Because this is representative of all changes made, and not just noise removed, both the removed artifacts and their interpolated reconstructions are audible, though the removed artifacts are much easier to hear.</figcaption></figure>
+	&nbsp;
+
+	<p>The difference is great enough, and so hard to reproduce using traditional audio processing methods (normal declick and decrackle modules do not function well with cylinder noise), that even the NEDCC tends to recommend the use of this module to its clients, although it does not turn it on by default. <sup><a href="#fn9" id="ref9">10</a></sup></p>
+
+	<p>The 2-d imaging software has its own analog to the 3-d blob module, known as &quot;cuts,&quot; using a different method. It too is quite effective, though not to quite the same &quot;magical&quot; extent as the blob clean. While the NEDCC does occasionally recommend the use of the blobs module to improve cylinder audio, it uses the cuts module much less frequently..</p>
+
+	<h4>Practicalities</h4>
+
+	<p>IRENE is a highly specialized piece of equipment (machines only exist at the moment at the NEDCC, the Berkeley lab, and the Library of Congress), and requires a non-trivial amount of training to use. While undamaged records take on average 20-25 minutes to process, transfer times for IRENE&#39;s most game-changing use, the reproduction of audio from physically broken or significantly damaged records, can take upwards of 8 hours of constant staff time. Furthermore, as detailed above increasing the desired audio quality has a direct linear affect on the amount of time that record will take to scan.</p>
+
+	<p>The system is rare enough and its use is expensive enough that the time taken for each transfer is a significant factor in the financial viability of its use as a service - both for the institution hosting the service and for clients looking to use the system for their own collections. Limitations on time are in direct conflict with the enormous amount of material out there that would benefit from IRENE digitization. This conflict places ongoing arguments in the field about the practical suitability of commonly recommended digitization standards in stark relief. This is especially the case for media in which the original recorded signal never rises above a relatively limited frequency range or below high noise-floor -- after all, why spend twice the time digitizing a cylinder whose original recorded signal never goes above 7kHz at a quality of 96kHz and 24 bits when you could capture the exact same signal with no practical loss at 48kHz and 16 bits? That immediately cuts the cost in half, with no discernible loss in audio content.</p>
+
+	<p>This is, in fact, what the NEDCC is already doing - their standard master quality for cylinders is 48 kHz and 16 bits.<sup><a href="#fn10" id="ref10">11</a></sup> Although this choice is in opposition of current accepted standards for archival-quality masters of music-based content,<sup><a href="#fn11" id="ref11">12</a></sup> this is a situation where I believe a legitimate case could be made for an exception. If making this choice allows the NEDCC to make their service more affordable to low-budget institutions while enabling them to digitize twice as many cylinders, and if nothing of evidentiary value is lost in the process, I can see nothing but benefits to the decision. In all non-cylinder cases, even acoustically-recorded gramophone discs, the NEDCC is sticking to the 96kHz 24 bit standard.</p>
+
+	<hr />
+	<p>The IRENE system is a truly&nbsp;disruptive technology in the world of audio digitization. With its now well-established presence in the audio archiving community, it&nbsp;will continue to force archivists to grapple with the assumptions they have&nbsp;made about what it means to digitize an audio recording, and how to translate physical digitization processes for audio&nbsp;to the visual realm, for some time. The only way to progress as a professional community is through such struggle, and as IRENE forces us to confront our assumptions about sound I believe we will come out the better for it.<br />
+		&nbsp;</p>
+
+	<hr />
+	<div class="footnotes">
+		<ol>
+			<li><sup class="footnote" id="fn1">NEDCC Audio Preservation Center, WNYC radio broadcast disc, recorded Dec. 24, 1943. Held by the New York City Municipal Archives. See the related NEDCC Seeing Sound blog post <a href="https://www.nedcc.org/audio-preservation/irene-blog/2014/06/20/damaged-media/">here</a>. <a href="#ref1" title="Jump back to footnote location.">↩</a></sup></li>
+			<br />
+			<li><sup class="footnote" id="fn2">NEDCC, &quot;<a href="https://www.nedcc.org/audio-preservation/irene-blog/2014/11/18/irene-now-available/">IRENE Audio Preservation Service Now Available!</a>.&quot; Nov. 18, 2014. <a href="#ref2" title="Jump back to footnote location.">↩</a></sup></li>
+			<br />
+			<li><sup class="footnote" id="fn3">This definition conveniently ignores the earliest experiments in sound transcription by &Eacute;douard-L&eacute;on Scott de Martinville in the late 1850s-60s. Although his phonautograms can technically be played back using modern technology, (a feat <a href="http://www.firstsounds.org/sounds/scott.php">successfully accomplished in 2007-2008</a> by the <a href="http://www.firstsounds.org/">First Sounds collaboration</a>), to the best of our knowledge they were not created with the intention of playback. <a href="#ref3" title="Jump back to footnote location.">↩</a></sup></li>
+			<br />
+			<li><sup class="footnote" id="fn12">Example 1: Georges Bizet, &quot;Carmen - Selection&quot; [performed by Alan Maclean and the New Queen&#39;s Hall Light Orchestra], 1923. Columbia L-1485.<br />
+				<br />
+				Example 2: Georges Bizet, &quot;Carmen - Selection&quot; [performed by Percy Pitt and the BBC Wireless Symphony Orchestra], 1926. Columbia 9125.<br />
+				<br />
+				Both transfers done by Damian J. Rogan, available on <a href="http://music.damians78s.co.uk/">his website</a>. <a href="#ref12" title="Jump back to footnote location.">↩</a></sup></li>
+			<br />
+			<li><sup class="footnote" id="fn4">E.W. Cornell <i>et al</i> (Lawrence Berkeley National Laboratory) and P. Alyea <i>et al</i> (Library of Congress), &quot;<a href="http://irene.lbl.gov/2D-Scanning.pdf">2D Optical Scanning of Mechanical Sound Carriers: Technical Description</a>&quot; (6-29-2009), p.2. <a href="#ref4" title="Jump back to footnote location.">↩</a></sup></li>
+			<br />
+			<li><sup class="footnote" id="fn5">E.W. Cornell <i>et al</i> (Lawrence Berkeley National Laboratory) and P. Alyea <i>et al</i> (Library of Congress), &quot;<a href="http://irene.lbl.gov/3D-Scanning.pdf">3D Optical Scanning of Mechanical Sound Carriers: Technical Description</a>&quot; (6-29-2009), p.10. <a href="#ref5" title="Jump back to footnote location.">↩</a></sup></li>
+			<br />
+			<li><sup class="footnote" id="fn6">From author&#39;s interview with NEDCC Audio Preservation Specialist Mason Vander Lugt. <a href="#ref6" title="Jump back to footnote location.">↩</a></sup></li>
+			<br />
+			<li><sup class="footnote" id="fn7">Percy Wenrich, &quot;Down in blossom row&quot; [Byron G. Harlan, performing]. Edison Gold Moulded Record: 9004. Archeophone-digitized recording courtesy of the UC Santa Barbara Library Special Collections. IRENE transfer from the NEDCC. <a href="#ref7" title="Jump back to footnote location.">↩</a></sup></li>
+			<br />
+			<li><sup class="footnote" id="fn8">Percy Wenrich, &quot;Down in blossom row&quot; [Byron G. Harlan, performing]. Edison Gold Moulded Record: 9004. Versions with and without blob-correction courtesy of the NEDCC. <a href="#ref8" title="Jump back to footnote location.">↩</a></sup></li>
+			<br />
+			<li><sup class="footnote" id="fn9">NEDCC, <i>IRENE Documentation for Clients (3D image data)</i>. [c.2015], p. 1. <a href="#ref9" title="Jump back to footnote location.">↩</a></sup></li>
+			<br />
+			<li><sup class="footnote" id="fn10">NEDCC, <i>Proposal template for IRENE service</i> (draft). [c.2015], p. 3. <a href="#ref10" title="Jump back to footnote location.">↩</a></sup></li>
+			<br />
+			<li><sup class="footnote" id="fn11">Most accepted best-practice recommendations suggest 96 kHz for all audio digitization, including The International Association of Sound and Audiovisual Archives&#39; &quot;<a href="http://www.iasa-web.org/tc04/audio-preservation">Guidelines on the Production and Preservation of Digital Audio Objects&quot;</a> (2009) and the Harvard-Indiana <a href="http://www.dlib.indiana.edu/projects/sounddirections/papersPresent/sd_bp_07.pdf"><i>Sound Directions</i></a> report (2007). The NEDCC references the relatively new FADGI &quot;<a href="http://www.archives.gov/preservation/products/products/aud-p2.html">Audio Limited Capture</a>&quot; [AUD-P2] standard to justify their choice. While I personally agree with the decision, it is worth noting that the FADGI document gives only the example of &quot;spoken word recordings&quot; as something to which the standard should apply. <a href="#ref11" title="Jump back to footnote location.">↩</a></sup></li>
+			<br />
+			&nbsp;
+		</ol>
+	</div>
+
+	<hr />
+	<h4>Sources</h4>
+
+	<ul class="sources">
+		<li>Mike Casey (Indiana University) and Bruce Gordon (Harvard University) et al, <i><a href="http://www.dlib.indiana.edu/projects/sounddirections/papersPresent/sd_bp_07.pdf">Sound Directions: Best Practices For Audio Preservation</a></i>. 2007.</li>
+		<li>Romain Crausaz, &ldquo;Bellrecords &ndash; Analysis of Historical Sound Recordings.&rdquo; Bachelors thesis on building an improved version of Blob Correction for the PRISM software used by IRENE, Lawrence Berkeley National Laboratory (August 2013)</li>
+		<li>Vitaliy Fadeyev and Carl Haber, &ldquo;<a href="http://www-cdf.lbl.gov/~av/JAES-paper-LBNL.pdf">Reconstruction of Mechanically Recorded Sound by Image Processing</a>.&rdquo; LBNL Report 51983, March 2003.</li>
+		<li>Vitaliy Fadeyev and Carl Haber, &ldquo;<a href="http://www-cdf.lbl.gov/~av/cylinder-paper-PVF.pdf">Reconstruction of Recorded Sound from an Edison Cylinder using Three-Dimensional Non-Contact Optical Surface Metrology</a>.&rdquo; LBNL Report 54927, August 2004.</li>
+		<li>Carl Haber, &ldquo;<a href="http://bio16p.lbl.gov/pahma.html">Examples and Background Information from the University of California at Berkeley Phoebe Hearst Museum of Anthropology Sound Recordings Restoration Proposal</a>.&rdquo; Last updated Dec 18, 2014.</li>
+		<li>Carl Haber, &ldquo;<a href="http://irene.lbl.gov/">IRENE Sound Reproduction R &amp; D Home Page</a>.&rdquo; Last updated 2013.</li>
+		<li>International Association of Sound and Audiovisual Archives, &quot;<a href="http://www.iasa-web.org/tc04/audio-preservation">Guidelines on the Production and Preservation of Digital Audio Objects&quot;</a> (Second edition, 2009)</li>
+		<li>Mason Vander Lugt, Webcast: &ldquo;<a href="http://vimeo.com/111864400">Introducing IRENE: Digitizing Historical Audio</a>.&rdquo; November 2014.</li>
+		<li>Northeast Document Conservation Center, &ldquo;<a href="https://www.nedcc.org/audio-preservation/irene-blog/">IRENE Seeing Sound Blog</a>.&rdquo; Last updated Nov. 18, 2014.</li>
+	</ul>
+
+	<h4>Interviews</h4>
+
+	<ul class="sources">
+		<li>Phone interview with Dr. Carl Haber, inventor of the IRENE system and Senior Scientist at the Lawrence Berkeley National Laboratory &ndash; Feb 6, 2015</li>
+		<li>Phone interview with Mason Vander Lugt, Audio Preservation Specialist at the NEDCC &ndash; Feb 5, 2015</li>
+	</ul>
+	<br />
+	&nbsp;</div>
 </body>
 </html>
